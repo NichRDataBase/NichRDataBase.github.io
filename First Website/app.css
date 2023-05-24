@@ -1,15 +1,28 @@
+
 h1 {
+    font-family: 'Courier New', Courier, monospace;
     color : lavender;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
 }
 h2{
+    font-family: 'Courier New', Courier, monospace;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
     color : lavender;
 }
 h3{
     color : lavender;
+    font-family: 'Courier New', Courier, monospace;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: .5px;
 }
 
 body {
-    background-image : "/images/Sunset.jpg";
+    background-image : url(/images/Sunset.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color : black;
     
 
@@ -17,6 +30,8 @@ body {
 
 p {
     color : lavender;
+    font-family: 'Courier New', Courier, monospace;
+    
 }
 
 .grid-container{
@@ -42,19 +57,29 @@ p {
 }
 
 .grid-item-1{
-grid-area : a;
-color : lavender;
+    grid-area : a;
+    color : lavender;
+    border-top-style: solid;
+    border-top: .25rem solid pink;
 }
 
 .grid-item-2{
     grid-area : b;
     color : lavender;
-    }
+    border-top-style: solid;
+    border-top: .25rem solid pink;
+}
 .grid-item-3{
     grid-area : d;
     color : lavender;
-    }
+    border-top-style: solid;
+    border-top: .25rem solid pink;
+}
 .grid-item-4{
     grid-area : c;
     color : lavender;
-    }    
+    border-style: solid ;
+    border-color: pink;
+    border-width: .25rem;
+    background-color:
+}    
