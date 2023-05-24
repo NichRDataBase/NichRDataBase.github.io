@@ -9,7 +9,9 @@ h3{
 }
 
 body {
+    background-image : "/images/Sunset.jpg";
     background-color : black;
+    
 
 }
 
@@ -19,11 +21,15 @@ p {
 
 .grid-container{
     display : grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; /*fr's are fractions of grid space*/
     /*grid-auto-rows : minmax(1fr, auto);*/
     grid-template-rows : 1fr 1fr 1fr;
     grid-column-gap : 20px;
     grid-row-gap : 20px;
+    align-items: center; /*vertical location of items in grid boxes*/
+    justify-items: center;/*horizontal location of items in grid boxes*/
+    align-content : space-around; /* How the boxes are vertically spaced within the grid (not as apparent since my grid is fractional and not pixel values) */
+    justify-content: center; /*How the boxes below are horizontally spaced within the grid (not as apparent since my grid is fractional and not pixel values) */
     grid-template-areas : 
     "a a ."
     "b b c"
