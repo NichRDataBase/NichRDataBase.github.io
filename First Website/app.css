@@ -34,6 +34,8 @@ p {
     
 }
 
+
+/*Grid info below*/
 .grid-container{
     display : grid;
     grid-template-columns: 1fr 1fr 1fr; /*fr's are fractions of grid space*/
@@ -50,10 +52,6 @@ p {
     "b b c"
     "d d d"
 
-
-
-   
-    
 }
 
 .grid-item-1{
@@ -81,5 +79,46 @@ p {
     border-style: solid ;
     border-color: pink;
     border-width: .25rem;
-    background-color:
-}    
+}
+/*End Grid Info*/
+
+/*NavBar info below*/
+
+/*navbar color and size*/
+.topnav {
+   
+    background-color: whitesmoke;
+    border-top-style : solid;
+    border-top-color: pink;
+    border-top-width: 10px;
+    
+    overflow: hidden;
+
+
+
+}
+
+/*formatting links in navbar*/
+.topnav a {
+    
+    font-size: 20px;
+    color: black;
+    float: left;
+    text-align: center;
+    text-decoration:none;
+    padding: 14px 10px;
+}
+
+/*formatting mouse hover in navbar*/
+.topnav a:hover {
+    background-color:darkgray;
+    color : black;
+}
+
+/*formatting active page in navbar*/
+.topnav a.active{
+    background-color:pink;
+    color: white;
+}
+
+/*End NavBar Info*/
