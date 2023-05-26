@@ -8,7 +8,7 @@ previews.forEach((preview)=>{
         modal.classList.add("open");
         original.classList.add("open");
 
-        const originalSrc= './images/XboxPFP.jpg';
+        /*const originalSrc= './images/XboxPFP.jpg';*/
     });
 });
 
@@ -18,4 +18,12 @@ modal.addEventListener('click',(e) => {
 
 );
 
+modal.addEventListener("click",(e) => {
+    if(e.target.classList.contains("modal")){
+        modal.classList.remove("open");
+        original.classList.remove("open");
+    }
 
+}
+
+);
